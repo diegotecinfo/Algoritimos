@@ -110,8 +110,7 @@ inicio
       Escreval("O triangulo e EQUILATERO?",EQ)
       Escreval("O triangulo e ESCALENO?", ES)
 fimalgoritmo
-<<<<<<< HEAD
-=======
+
 
 //ALGORITMO QUE CALCULA A SUA IDADE
 	algoritmo "Creuza01"
@@ -172,11 +171,36 @@ algoritmo "Creuza04"
 	Escreval("O imposto desse produto e:US$",imposto:5:2," dolares.")
 	fimalgoritmo
 
-	/*CREUZA PEGA UM EMPRESTIMO, ONDE A TAXA DE JUROS E DE 20% E PODE PARCELAR O PAGAMENTO EM QUANTAS VEZES
-	DESEJAR
-		QUAL O VALOR DO IMPRESTIMO?
-		QUANTAS PARCELAS?
-	CRIE UM ALGORITIMO PARA AJUDAR A CREUZA*/
+// EXERCICIO EMPRESTIMO
+	/* CICLANO QUER PRETENDE FAZER UM EMPRESTIMO, ONDE A TAXA DE JUROS É DE 20%, PODENDO PAGAR PARCELADO
+	   CRIE UM ALGORITMO QUE SOLICITE O VALOR DO EMPRESTIMO E EM QUANTAS VEZES SERÁ PAGO
+	   MOSTRE NA TELA O VALOR DO EMPRESTIMO, VALOR TOTAL A SER PAGO, QUANTAS PARCELAS E QUAL VALOR DE CADA PARCELA
+
+
+	algoritmo "Creuza05"
+
+	var
+		emprestimo, parcelas, vlr_total, vlr_parcela:real
+	inicio
+
+		Escreva("Qual o valor do emprestimo? R$")
+		Leia(emprestimo)
+
+		Escreva("Em quantas parcelas deseja efetuar o pagamento? ")
+		Leia(parcelas)
+
+		vlr_total <-emprestimo + (emprestimo * 20)/100
+		vlr_parcela <- vlr_total/parcelas
+
+
+		Escreval("")
+		Escreval("")
+		Escreval("A taxa de juros para emprestimos é de 20%")
+		Escreval("Valor do emprestimo: R$",emprestimo:7:2)
+		Escreval("Valor total a ser pago: R$",vlr_total:7:2)
+		Escreval("Parcelado em ",parcelas,"x de R$",vlr_parcela:7:2)
+
+	fimalgoritmo
 
 
 
