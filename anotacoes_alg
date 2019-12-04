@@ -111,6 +111,71 @@ inicio
       Escreval("O triangulo e ESCALENO?", ES)
 fimalgoritmo
 
+//ALGORITMO QUE CALCULA A SUA IDADE
+	algoritmo "Creuza01"
+
+	var
+	ano_atual,ano_nasc, idade:inteiro
+	inicio
+		Escreval("Em que ano nos estamos?")
+		Leia(ano_atual)
+		
+		Escreval("Em que ano eu nasci?")
+		Leia(ano_nasc)
+		
+		idade <- ano_atual - ano_nasc
+		Escreval("Minha idade e",idade," anos")
+		
+	fimalgoritmo
+
+//ALGORITMO QUE REALIZA A CONVERSAO DE REAL PARA DOLAR
+	algoritmo "Creuza02"
+
+	var
+	reais, dolares:real
+	inicio
+		Escreva("Quantos reais eu tenho? R$")
+		Leia(reais)
+		
+		dolares <- reais/4.21
+		Escreval("Posso ter US$",dolares," dolares.")
+
+	fimalgoritmo
+
+//ALGORITMO CONVERSOR DE CELCIUS PARA FARENHEIT
+	algoritmo "Creuza03"
+
+	var
+	f,c: real
+	inicio
+		Escreva("Qual e a temperatura aqui?")
+		Leia(f)
+		
+		c <- (f -32)/1.8
+		
+		Escreval("No Brasil a temperatura estaria ",c:4:1," graus")
+		
+	fimalgoritmo
+
+//ALGORITMO QUE SIMULA CALCULO DE IMPOSTO PARA IMPORTACAO
+algoritmo "Creuza04"
+
+	var
+	preco, imposto:real
+	inicio
+	Escreva("Qual o valor do produto? US$")
+	Leia(preco)
+	
+	imposto <- (preco*60)/100
+	Escreval("O imposto desse produto e:US$",imposto:5:2," dolares.")
+	fimalgoritmo
+
+	/*CREUZA PEGA UM EMPRESTIMO, ONDE A TAXA DE JUROS E DE 20% E PODE PARCELAR O PAGAMENTO EM QUANTAS VEZES
+	DESEJAR
+		QUAL O VALOR DO IMPRESTIMO?
+		QUANTAS PARCELAS?
+	CRIE UM ALGORITIMO PARA AJUDAR A CREUZA*/
+
 
 
 
