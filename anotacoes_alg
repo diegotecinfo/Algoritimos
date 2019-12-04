@@ -110,14 +110,3 @@ inicio
       Escreval("O triangulo e EQUILATERO?",EQ)
       Escreval("O triangulo e ESCALENO?", ES)
 fimalgoritmo
-
-
-
-
-
-
-
-
-
-
-
