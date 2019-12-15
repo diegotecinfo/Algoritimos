@@ -202,16 +202,80 @@ algoritmo "Creuza04"
 
 	fimalgoritmo
 
-	 /* AULA 07 */
+
+// ESTRUTURAS CONDICIONAIS
+	-CONDICIONAL SIMPLES
+
+	SE O RESULTADO FOR EQUIVALENTE A CONDIÇÃO ESTABELECIDA, EXECUTE ALGO, CASO CONTRÁRIO SIGA OS PROXIMOS PASSOU OU NÃO FAÇA NADA.
+
+	Se (expressao) entao
+		faça algo
+	FimSe
+
+	EXEMPLO:
+		ALGORITIMO QUE CALCULA A IDADE E VERIFICAR SE VOCÊ MAIOR DE 18 ANOS.
+
+	algoritmo "Calculoidade"
+	var
+   		ano, nasc, idade: real
+	inicio
+      Escreval("Em que ano estamos ?")
+      Leia(ano)
+      Escreval("Em que ano você nasceu ?")
+      Leia(nasc)
+      idade <- ano - nasc
+      Escreva("Em ",ano," você terá",idade," anos, ")
+
+      Se(idade >= 18) entao
+      Escreval("e será maior de idade.")
+      FimSE
+	fimalgoritmo
+
+	-CONDICIAL COMPOSTA
+
+	SE O RESULTADO FOR EQUIVALENTE A CONDIÇÃO ESTABELECIDA, EXECUTE ALGO, SENÃO EXECUTE DETERMINADOS COMANDOS.
+
+	EXEMPLO:
+		ALGORITIMO VERIFICA SE O NÚMERO E PAR OU IMPAR
+
+	algoritmo "ParOuImpar"
+	var
+   		N: inteiro
+	inicio
+      Escreva("Digite um número qualquer: ")
+      Leia(N)
+      
+      Se(N % 2 = 0) entao
+           Escreval("O número",N," é par")
+      SeNao
+           Escreva("O número",N," é ímpar")
+      FimSE
+	fimalgoritmo
 
 
+	EXEMPLO 2:
+		CALCULO DE IMC
 
+	algoritmo "IMC"
+	var
+    peso, altura, IMC: real
+	inicio
+   		Escreva("Digite seu peso (Kg): ")
+   		Leia(peso)
+   		Escreva("Digite sua altura (M): ")
+   		Leia(altura)
+   
+   	IMC <- peso / (altura ^ 2)
+   
+   		Escreval("IMC: ", IMC:5:2)
+   
+   		Se(IMC >= 18) e (IMC <= 25) entao
+          Escreva("Parabéns você está no seu peso Ideal")
+   		Senao
+          Escreva("Você não está na faixa de peso ideal")
+   	FimSE
+   
+fimalgoritmo
+	
 
-
-
-
-
-
-
-
->>>>>>> 19b784301ab07facf244d8fd6fce3d16c0c19fb5
+	 AULA 08
